@@ -4,1246 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
-
+    <link rel="stylesheet" href="index.css">
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.web-container {
-    width: 100%;
-    height: 780vh;
-    
-}
-/* ..................navbar..................................... */
-
-
-.navbar-container {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    position:fixed;
-    background-color:rgb(211,212,205) ;
-   z-index: 1;
-}
-
-.logo-section {
-    width: 16%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:rgb(211,212,205);
-}
-
-.logo-section .logo {
-    width: 25%;
-
-}
-
-.logo-section .logoname {
-    width: 35%;
-    margin-top: 8px;
-}
-.nav-menu label {
-    display: none;
-
-}
-#checking{
-    display: none;
-}
-.nav-menu label {
-    display: none;
-
-
-}
-
-.navbar {
-    width: 85%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-contact {
-    width: 96%;
-    height: 37%;
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    font-size: small;
-    border-bottom: 1px solid silver;
-    margin-left: 4%;
-}
-
-.nav-Welcome {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    font-size: 13px;
-    color: gray;
-    font-weight: 500;
-}
-
-.nav-cont {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.nav-mail,
-.nav-clock {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 3%;
-    font-family: sans-serif;
-    color: rgb(122, 120, 127);
-}
-
-.nav-cont img,
-.social-media img {
-    width: 16px;
-}
-
-.social-media {
-    width: 33%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9%;
-    background-color: rgb(244, 242, 249);
-}
-
-.nav-menu {
-    width: 96%;
-    height: 63%;
-    margin-left: 4%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-items {
-    width: 45%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10%;
-}
-
-.nav-items p {
-    font-family: system-ui, sans-serif;
-    color: rgb(109, 107, 114);
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.phone-contact {
-    width: 24.8%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.phone-contact img {
-    width: 30px;
-    height: 30px;
-}
-
-.search-phone {
-    width: 38%;
-    height: 100%;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.phn {
-    width: 35%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: rgb(19, 52, 83);
-}
-
-.phone-number {
-    width: 65%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    justify-content: center;
-}
-
-.phone-number p {
-    font-family: system-ui, sans-serif;
-    font-size: small;
-    color: rgb(122, 120, 127);
-    font-weight: 500;
-}
-
-
-
-
-/* ........................................banner.............................................. */
-
-.banner-container{
-    width: 100%;
-    height: 100vh;
-    background-color: blueviolet;
-    background-repeat: no-repeat;
-    background-image: url(Nest-images/WhatsApp\ Video\ 2024-11-05\ at\ 12.31.00_7d24daf4.gif);
-    background-size: 100vw 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    color: white;
-   
- }
-.banner-container .head{
-    width: 20%;
-    height: 4%;
-     /* background-color: rgb(159, 109, 34); */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-bottom: 2px solid silver;
-    font-size: 12px;
-    font-weight:200;
-    margin-top: 84px;
-    color: white; 
-}
-.banner-container h1{
-    font-family: sans-serif;
-    font-size: 80px;
-    margin-top: 40px;
-    color: whitesmoke;
-    /* color: transparent; */
-}
-.banner-container button{
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    border: none;
-    background-color: rgb(19, 52, 83);
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    background: linear-gradient(to left, rgb(9,119, 164) 50%, rgb(24,42,84) 50%) right;
-    background-size: 200%;
-    transition: 0.5s ease-out;
-    
-}
-.banner-container button:hover{
-    background-color: rgb(9,119, 164);
-    background-position:left;
-}
-
-
-
-
-/* ...............................about................................... */
-
-.about-container{
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    /* background-color: blueviolet; */
-}
-.about-container .image-section{
-    width: 47%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: aqua; */
-}
-.image-section img{
-    width: 80%;
-    height: 80%;
-}
-
-.about-container .about-content{
-    width: 53%;
-    height: 100%;
-    /* background-color: bisque; */
-}
-.about-combany{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;  */
-    /* background-color: rgb(39, 202, 194); */
-    padding: 10%;
-    gap: 8%;
-}
-.about-combany span{
-    color: rgb(9,119, 164);
-    font-family: sans-serif;
-    font-weight: 600;
-    margin-top: 10%;
-}
-.about-combany h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-}
-.about-combany p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    color: rgb(19, 52, 83);
-
-}
-
-.skills-section {
-    max-width: 450px;
-    height: 280px;
-    margin: 0 10%;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    /* background-color: cadetblue; */
-}
-
-.skill {
-    margin-bottom: 15px;
-}
-
-.skill-name {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.skill-name p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-
-}
-.skill-name{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: small;
-    font-weight: bold;
-}
-.progress-bar {
-    background-color: whitesmoke;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 8px;
-}
-
-.progress {
-    background-color:rgb(19, 52, 83);
-    height: 100%;
-    border-radius: 8px;
-    background: linear-gradient(to left, whitesmoke 50%, rgb(24,42,84) 50%) right;
-    background-size: 200%;
-    transition: 1s ease-in;
-}
-
-
-.progress-software { width: 92%; }
-.progress-cyber { width: 80%; }
-.progress-ai { width: 95%; }
-.progress-web { width: 78%; }
-
-.about-content .button{
-    background-color:rgb(9,119, 164); 
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border-radius: 20px; 
-    cursor: pointer;
-    margin: 10% 10%;
-    font-weight: 600;
-}
-.about-content .button:hover {
-    background-color: rgb(19, 52, 83); 
-}
-.about-container:hover .progress{
-
-    background-position:left;
-
-
-}
-
-/* ................................services........................... */
-.service-container{
-    width: 100%;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(244,242,249);
-}
-.service-title{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 24px;
-    font-family: sans-serif;
-    /* background-color: aqua; */   
-}
-.servicebox-container{
-    width: 70%;
-    height: 70%;
-    /* background-color: rgb(186, 119, 18); */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1200px;
-}
-
-.service-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* text-align: center; */
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    background: linear-gradient(to left,#fff 50% 50%, rgb(9,119, 164) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-}
-
-.service-box:hover {
-    transform: translateY(-5px);
-    filter: drop-shadow(1px 10px 15px rgb(9,119, 164));
-    background-position:left;
-    color: white;
-}
-.service-box .icon{
-    width: 25%;
-}
-.service-box h3{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 2%;
-}
-.service-box p{
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 500;
-    letter-spacing: 2%;
-}
-
-/* .............................parallax............................. */
- .parallax-container{
-    width: 100%;
-    height:40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: center;
-    background-color: rgb(19, 52, 83);
-    padding-right: 12%;
-    gap: 9%;
- }
- .parallax-title{
-    width: 50%;
-    height: 20%;
-    /* background-color: chocolate; */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
- }
- .parallax-title h3{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 28px;
-    font-weight: 500;
-    color: white;
-    margin-left: 20px;
- }
- .parallax-title p{
-    font-family: sans-serif;
-    font-size: 14px;
-    color: white;
-    font-weight: 600;
- }
- .parallax-buttons{
-    width: 50%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-    /* background-color: bisque; */
- }
- .parallax-buttons .left-button{
-    width: 25%;
-    height: 40%;
-    background-color: rgb(9,119, 164);
-    color: white;
-    font-family: sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    border: none;
-   
- }
- .parallax-buttons .right-button{
-    width: 25%;
-    height: 40%;
-    background: none;
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
-    border: 2px solid white;
-    background: linear-gradient(to left,rgb(19,52,83) 50% 50%, rgb(9,119, 164) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-
- }
- .parallax-buttons .right-button:hover{
-    background-position:left;
-
- }
-
-
-/* ...................why.................................. */
-
-.why-container{
-    width: 100%;
-    height:120vh;
-    /* background-color: aqua; */
-}
-.why-titlesection{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10%;
-    /* background-color: blueviolet; */
-}
-.why-titlesection h2{
-    font-family: sans-serif;
-    font-size: 42px;
-}
-.why-titlesection p{
-    font-family: sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-.container {
-    width: 100%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 2fr auto 1fr;
-    display: flex;
-    justify-content: center;
-    /* background-color: aqua; */
-    background-image: url(Nest-images/Screenshot\ 2024-11-06\ 121418.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.section {
-    width: 100%;
-    height: 100%;
-    /* background-color: blue; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10%;    
-}
-.section-item {
-    display: flex;
-    align-items: flex-start;
-}
-.section-item img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-.section-item h3 {
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-}
-.section-item p {
-    color: #666;
-    line-height: 1.5;
-}
-
-/* ......................testimonials............ */
-.testimonials-container{
-    width: 100%;
-    height: 100vh;
-    background-color: aqua;
-    background-image: url(Nest-images/testimonials.webp);
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-}
-.testimonials-title{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    /* background-color: blue; */
-    gap: 15%;
-}
-.testimonials-title h2{
-    font-size: 34px;
-    font-weight: bold;
-    color: white;
-    font-family: sans-serif;
-}
-.testimonials-title p{
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: white;
-    letter-spacing: 3px;
-}
-.testimonials-body{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: cadetblue; */
-}
-.testimonials-content {
-    width: 70%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    gap: 4%;
-    /* background-color: blue; */
-}
-.testimonials-content img{
-    width: 16%;
-    height: 80%;
-}
-.testimonials-content p{
-    font-size: 22px;
-    font-family: sans-serif;
-    font: bolder;
-    font-style: italic;
-    letter-spacing: 2px;
-    color: white;
-    
-}
-.content-label{
-    width: 42%;
-    height: 8%;
-    /* background-color: rgb(43, 189, 195); */
-    font-size: 17px;
-    font-family: sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    color: white;
-    letter-spacing: 2px;
-}
-.testimonials-bottom{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    /* background-color: blueviolet; */
-}
-.testimonials-bottom img{
-   width: 3%;
-   height: 50%;
-   margin-right: 5%;
-   /* background-color: aquamarine; */
-}
-/* ........................partners............. */
-
-.partners-container{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30%;
-    /* background-color: aqua; */
-}
-.partners-container h2{
-    font-family: sans-serif;
-    font-size: 38px;
-    font-weight: bold;
-}
-.partner-combany{
-    width: 95%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    gap: 5%;
-    /* background-color: blueviolet; */
-}
-.partner-combany img{
-    width: 15%;
-    height: 15%;
-}
-/* ..................footer............................... */
-
-
-
-.footer {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    /* background-color: #e03232; */
-   
-}
-
-.footer-content {
-    width: 100%;
-    height: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(186, 194, 194);
-    
-}
-.footer-companyinfo{
-    width: 25%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 4%;
-}
-.footer-companyinfo img{
-    width: 25%;
-}
-.footer-companyinfo{
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color:grey;
-}
-.social-icons{
-    width: 40%;
-    height: 30%;
-    /* background-color: rgb(210, 126, 25); */
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-icons img{
-    width: 30%;
-    height: 80%;
-    background-color: rgb(9,119,164);
-    border-radius: 50%;
-    padding: 4%;
-}
-.footer-quicklinks{
-    width: 10%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* background-color: bisque; */
-}
-.footer-quicklinks h3{
-    font-family: sans-serif;
-    font-size: 22px;
-    color: white;
-}
-.footer-quicklinks ul{
-    list-style-type: none;
-}
-.footer-quicklinks ul li a {
-    color: rgb(19, 52, 83);
-    text-decoration: none;
-    display: flex;
-    margin-top: 20%;
-    
-}
-.footer-quicklinks a{
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-}
-.footer-quicklinks a:hover{
-    color: rgb(9,119, 164);
-}
-.footer-contact{
-    width: 20%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1%;
-    /* background-color: bisque;     */
-}
-.footer-contact h3{
-    font-family: sans-serif;
-    font-size: 22px;
-    color: white;
-    margin-top: 10%;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 3%;
-    /* background-color: aquamarine;     */
-}
-.contact-item img{
-    width: 12%;
-    padding: 3%;
-    background-color: rgb(9,119, 164);
-    border-radius: 50%;
-} 
-.contact-text p{
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: grey;
-}
-
-.contact-text a {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-.contact-text span{
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-}
-.contact-text a:hover {
-    color: rgb(9,119, 164);
-}
-.footer-bottom{
-    width: 100%;
-    height: 15%;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    background-color:rgb(19, 52, 83);
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-}
-
-</style>
-
 <body>
-<div class="web-container">
-
- <!-- ....................................navbar....................................    -->
- <div class="navbar-container">
-
-  <div class="logo-section">
-      <img class="logo" src="Nest-images/Nest-logo.png" alt="">
-      <img class="logoname" src="Nest-images/Nest-logoname.png" alt="">
-  </div>
-  <div class="navbar">
-      <div class="nav-contact">
-          <div class="nav-Welcome">
-              <p> Welcome to IT Solutions & Services</p>
+    <div class="web-container">
+        <div class="nav-banner-container">
+        <!-- nav-bar -->
+        <div class="navbar-container">
+            <div class="navlogo-section">
+               <img src="Nest-images/NAMELOGO.png" alt="">
+            </div>
+            <input type="checkbox" id="checking">
+            <label for="checking"><img class="menu-icon" src="Ovista-images/icons8-menu-60.png" alt=""></label>
+            <div class="nav-items">
+                <input type="checkbox" id="checking">
+                <label for="checking"><img src="Ovista-images/icons8-close-50.png" alt=""></label>
+                <a href="#">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="blog.html">SERVICES</a>
+                <a href="gallery.html">PRODUCTS</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
           </div>
-          <div class="nav-cont">
-              <div class="nav-mail">
-                  <img src="Nest-images/mail.png" alt="">
-                  <p>needhelp@company.com</p>
-              </div>
-              <div class="nav-clock">
-                  <img src="Nest-images/clock.png" alt="">
-                  <p> Mon - Sat: 8.00 am - 7.00 pm</p>
-              </div>
-              <div class="social-media">
-                  <img src="Nest-images/twitter.png" alt="">
-                  <img src="Nest-images/facebook.png" alt="">
-                  <img src="Nest-images/pinterest.png" alt="">
-                  <img src="Nest-images/insta.png" alt="">
-              </div>
-
-          </div>
-
-      </div>
-
-      <div class="nav-menu">
-
-          <input type="checkbox" id="checking">
-          <label for="checking"><img src="Nest-images/icons8-menu-60.png" alt=""></label>
-          <div class="nav-items">
-              <input type="checkbox" id="checking">
-              <label for="checking"><img src="Nest-images/icons8-close-30.png" alt=""></label>
-              <p>Home</p>
-              <p>About</p>
-              <p>Pages</p>
-              <p>Services</p>
-              <p>Blog</p>
-              <p>Contact</p>
-          </div>
-
-          <div class="phone-contact">
-              <div class="search-phone">
-                  <img src="Nest-images/search.png" alt="">
-                  <div class="phn">
-                      <img src="Nest-images/phone.png" alt="">
-                  </div>
-              </div>
-              <div class="phone-number">
-                  <p>Call Anytime</p>
-                  <span>+ 97142978336</span>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
     
-     <!-- ..................................banner.................................. -->
+        <!-- banner -->
+    
+        <div class="banner-container">
+            <h1> WE DO ALL IT SERVICES <br> LIKE <span class="auto-type"></span></h1>
+        </div>
+        </div> 
 
-    <div class="banner-container">
-      <div class="head">
-        <h2>EXPERIENCE THE BEST SOLUTIONS</h2>
+        <!-- services -->
+       <!-- <div class="servicepage-container">
+          <div class="service-container">
+            <div class="service">
+                <img src="Nest-images/IT infrastructure.png" alt="">
+                <h2>IT INFRASTRUCTURE</h2>
+            </div>
+            <div class="service">
+                <img src="Nest-images/cyber-security-icon.png" alt="">
+                <h2>Cyber Security</h2>
+            </div>
+            <div class="service">
+                <img src="Nest-images/technology consulting.png" alt="">
+                <h2>IT SUPPORT</h2>
+            </div>
+            <div class="service">
+                <img src="Nest-images/web development.png" alt="">
+                <h2>WEb DEVlOPment</h2>
+            </div>
+          </div>
+       </div> -->
+
+       <!-- about -->
+       <div class="about-container">
+
+        <div class="image-section">
+         <img src="Nest-images/Untitled.png" alt="">
+        </div>  
+         
+        <div class="about-content">
+          <div class="about-combany">
+            <span>About Our Combany</span>
+            <h2>We Are Increasing Business Success <br> With Technology</h2>
+            <p>Over 25 Years working in IT servives developeing sofware applications <br> and mobile apps for clients all over the world</p>
+          </div>
+           
+    <div class="skills-section">
+      <div class="skill">
+          <div class="skill-name">
+              <p>Software Development</p>
+              <span>92%</span>
+          </div>
+          <div class="progress-bar">
+              <div class="progress progress-software"></div>
+          </div>
+      </div>
+    
+      <div class="skill">
+          <div class="skill-name">
+              <p>Cyber Security</p>
+              <span>80%</span>
+          </div>
+          <div class="progress-bar">
+              <div class="progress progress-cyber"></div>
+          </div>
+      </div>
+    
+      <div class="skill">
+          <div class="skill-name">
+              <p>Artificial Intelligence</p>
+              <span>95%</span>
+          </div>
+          <div class="progress-bar">
+              <div class="progress progress-ai"></div>
+          </div>
+      </div>
+    
+      <div class="skill">
+          <div class="skill-name">
+              <p>Web Development</p>
+              <span>78%</span>
+          </div>
+          <div class="progress-bar">
+              <div class="progress progress-web"></div>
+          </div>
+      </div>
+    </div>
+          <button class="button">Learn More</button>
+        </div>
+     </div>
+      
+    <!-- main service -->
+    <div class="main-service-page">
+        <div class="service-title">
+            <span>WHY ALWAYS WE</span>
+            <h2>Why our product is the best</h2>
+        </div>
+        <div class="main-service-container">
+            <div class="main-service">
+                <img src="Nest-images/icons8-secure-100.png" alt="">
+                <h2>Secure</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus dolores hic similique rerum corrupti a recusandae 
+                    adipisci nisi quas optio.</p>
+            </div>
+            <div class="main-service">
+                <img src="Nest-images/icons8-quality-100.png" alt="">
+                <h2>Quality</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus dolores hic similique rerum corrupti a recusandae 
+                    adipisci nisi quas optio.</p>
+            </div>
+            <div class="main-service">
+                <img src="Nest-images/icons8-efficiency-100.png" alt="">
+                <h2>Efficient</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus dolores hic similique rerum corrupti a recusandae 
+                    adipisci nisi quas optio.</p>
+            </div>
+            <div class="main-service">
+                <img src="Nest-images/icons8-on-time-100.png" alt="">
+                <h2>Timeing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Voluptatibus dolores hic similique rerum corrupti a recusandae 
+                    adipisci nisi quas optio.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner-2 -->
+     <div class="banner2-container">
+        <h2>IT Solutions & Services Right <br>At Your Fingertips</h2>
+        <button>Contact Us</button>
+     </div>
+
+     <!-- enhance -->
+      <div class="enchancepage-container">
+         <div class="enchnce-title">
+                <span>IT Solutions & Services</span>
+                <h2>Improve & Enhance the <br> Business Projects</h2>
+         </div>
+         <div class="enhance-container">
+            <div class="enhance">
+                <h4>Cyber Security​</h4>
+            </div>
+            <div class="enhance">
+                <h4>Security and surveillance</h4>
+            </div>
+            <div class="enhance">
+                <h4>Web Development</h4>
+            </div>
+            <div class="enhance">
+                <h4>IT Infrastructure​</h4>
+            </div>
+         </div>
+   
+      </div>
+
+     <!-- achivements -->
+      <div class="achivement-container">
+        <div class="achivement">
+            <img src="Nest-images/icons8-winners-medal-100.png" alt="">
+            <h3>100</h3>
+            <p>Awards</p>
+        </div>
+        <div class="achivement">
+            <img src="Nest-images/icons8-group-100.png" alt="">
+            <h3>200</h3>
+            <p>Clients</p>
+        </div>
+        <div class="achivement">
+            <img src="Nest-images/icons8-project-100.png" alt="">
+            <h3>100</h3>
+            <p> Projects</p>
+        </div>
+     
       </div>
       
-      <h1>IT SOLUTIONS & <br> SERVICES</h1>
-
-      <button>LEARN MORE</button>
-    </div>
-
-
-
-  <!-- .......................................about............................................. -->
-   
-  <div class="about-container">
-
-    <div class="image-section">
-     <img src="Nest-images/Untitled.png" alt="">
-    </div>  
-     
-    <div class="about-content">
-      <div class="about-combany">
-        <span>About Our Combany</span>
-        <h2>We Are Increasing Business Success <br> With Technology</h2>
-        <p>Over 25 Years working in IT servives developeing sofware applications <br> and mobile apps for clients all over the world</p>
-      </div>
+      <!-- partner -->
        
-<div class="skills-section">
-  <div class="skill">
-      <div class="skill-name">
-          <p>Software Development</p>
-          <span>92%</span>
-      </div>
-      <div class="progress-bar">
-          <div class="progress progress-software"></div>
-      </div>
-  </div>
-
-  <div class="skill">
-      <div class="skill-name">
-          <p>Cyber Security</p>
-          <span>80%</span>
-      </div>
-      <div class="progress-bar">
-          <div class="progress progress-cyber"></div>
-      </div>
-  </div>
-
-  <div class="skill">
-      <div class="skill-name">
-          <p>Artificial Intelligence</p>
-          <span>95%</span>
-      </div>
-      <div class="progress-bar">
-          <div class="progress progress-ai"></div>
-      </div>
-  </div>
-
-  <div class="skill">
-      <div class="skill-name">
-          <p>Web Development</p>
-          <span>78%</span>
-      </div>
-      <div class="progress-bar">
-          <div class="progress progress-web"></div>
-      </div>
-  </div>
-</div>
-      <button class="button">Learn More</button>
-    </div>
- </div>
-
-
-<!-- .........................services............................................ -->
-<div class="service-container">
-   <div class="service-title">
-    <h2>We Are Offering All Kinds of <br> IT Solutions & Services</h2>
-   </div>
-  <div class="servicebox-container">
-    <div class="service-box">
-      <img class="icon" src="Nest-images/software-development.png" alt="">
-      <h3>Software Development</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  <div class="service-box">
-    <img class="icon" src="Nest-images/web development.png" alt="">
-      <h3>Web Development</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  <div class="service-box">
-    <img class="icon" src="Nest-images/technology consulting.png" alt="">
-      <h3>Analytic Solutions</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  <div class="service-box">
-    <img class="icon" src="Nest-images/IT infrastructure.png" alt="">
-      <h3>Cloud & DevOps</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  <div class="service-box">
-    <img class="icon" src="Nest-images/security & surveillance.png" alt="">
-      <h3>Product & Design</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  <div class="service-box">
-    <img class="icon" src="Nest-images/cyber-security-icon.png" alt="">
-      <h3>Data Center</h3>
-      <p>At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database. <br>
-        At vero eos et accusamus etusto odio praesentium accusamus etusto odio data center for managing database</p>
-  </div>
-  </div>
-</div>
-
-<!-- ...........................parallax.......................... -->
-
-<div class="parallax-container">
-   <div class="parallax-title">
-    <h3>Let's Develop Your Next Great App!</h3>
-    <p>Do you need a unique sofware solution for your company? We know how to help you</p>
-   </div>
-   <div class="parallax-buttons">
-    <button class="left-button">GET IN TOUCH</button>
-    <Button class="right-button">LEARN MORE</Button>
-   </div>
-</div>
-
-<!-- ........................why................................ -->
-<div class="why-container">
-  <div class="why-titlesection">
-    <h2>Why Choose Us</h2>
-    <p>We support your business with high security.Our key features help you to achieve your <br>
-       business goal.We provide the best IT solutions in Dubai and fujairah. </p>
-  </div>
-  <div class="container">
-    <div class="section">
-        <div class="section-item">
-            <img src="Nest-images/experience.png" alt="Experience Icon">
-            <div>
-                <h3>Experience</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                   Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                   voluptas eos ipsam numquam. Illo explicabo cumque repellat <br>
-                   officiis nostrum reprehenderit, ratione doloribus?</p>
+      <div class="partner-container">
+        <h2>OUR PARTNERS</h2>
+        <marquee behavior="" direction="">
+            <div class="partners-combany">
+              <img src="Nest-images/al_naboodah-removebg-preview.png" alt="">
+              <img src="Nest-images/barco-removebg-preview.png" alt="">
+              <img src="Nest-images/fibrain-removebg-preview.png" alt="">
+              <img src="Nest-images/gsuite-logo-removebg-preview.png" alt="">
+              <img src="Nest-images/al_naboodah-removebg-preview.png" alt="">
+              <img src="Nest-images/barco-removebg-preview.png" alt="">
+              <img src="Nest-images/fibrain-removebg-preview.png" alt="">
+              <img src="Nest-images/gsuite-logo-removebg-preview.png" alt=""> 
             </div>
+          </marquee>
+      </div>
+
+      <!-- Certificate -->
+       <div class="certificate-page">
+        <div class="certificate-title">
+          <h2>OUR CERTIFICATES</h2>
         </div>
-        <div class="section-item">
-            <img src="Nest-images/products.png" alt="Products Icon">
-            <div>
-                <h3>Products</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                  Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                  voluptas eos ipsam numquam. Illo explicabo cumque repellato<br>
-                  officiis nostrum reprehenderit, ratione doloribus?</p>
+          <div class="certificate-container">
+            <div class="certifacte-section">
+                <img src="Nest-images/NEST_IT_SOLUTIONS_FZE_Small_and_Medium_Business_Specialized__11_7_2024 CISCO_page-0001.jpg" alt="">
+                <img src="Nest-images/NEST IT SOLUTIONS SAMCOM CERTIFICATE_page-0001.jpg" alt="">
+                <img src="Nest-images\certificate.jpg" alt="">
             </div>
-        </div>
-        <div class="section-item">
-            <img src="Nest-images/approachh.png" alt="Approach Icon">
-            <div>
-                <h3>Approach</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                  Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                  voluptas eos ipsam numquam. Illo explicabo cumque repellat <br>
-                  officiis nostrum reprehenderit, ratione doloribus?</p>
+            <div class="certifacte-section">
+                <img src="Nest-images\WhatsApp Image 2025-01-14 at 12.37.37_c33e9ef1.jpg" alt="">
+                <img src="Nest-images/NEST IT SOLUTIONS LLC SIRA SecurityLicense 2025_page-0001.jpg" alt="">
+                <img src="Nest-images/NEST_IT_SOLUTIONS_FZE_Select_Integrator CISCO CERTIFICATE_page-0001.jpg" alt="">
             </div>
-        </div>
-    </div>
-
-  
-
-    <div class="section">
-        <div class="section-item">
-            <img src="Nest-images/pricing.png" alt="Pricing Icon">
-            <div>
-                <h3>Pricing</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                  Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                  voluptas eos ipsam numquam. Illo explicabo cumque repellat  <br>
-                  officiis nostrum reprehenderit, ratione doloribus?</p>
-            </div>
-        </div>
-        <div class="section-item">
-            <img src="Nest-images/ontime delivery.png" alt="Delivery Icon">
-            <div>
-                <h3>Delivery</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                  Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                  voluptas eos ipsam numquam. Illo explicabo cumque repellat  <br>
-                  officiis nostrum reprehenderit, ratione doloribus?</p>
-            </div>
-        </div>
-        <div class="section-item">
-            <img src="Nest-images/customer support.png" alt="Support Icon">
-            <div>
-                <h3>Support</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-                  Est quae laudantium aut excepturi nulla reiciendis corporis <br>
-                  voluptas eos ipsam numquam. Illo explicabo cumque repellat <br>
-                  officiis nostrum reprehenderit, ratione doloribus?</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ...................testimonials............... -->
- <div class="testimonials-container">
-   <div class="testimonials-title">
-      <h2>Testimonials</h2>
-      <p>We value our clients and thier valuable feedback.</p>
-   </div>
-   <div class="testimonials-body">
-    <div class="testimonials-content">
-      <img src="Nest-images/kps.png" alt="">
-      <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>
-        Dolores reiciendis eius suscipit provident. Quidem, expedita <br>
-        quaerat molestias accusantium dolor facilis necessitatibus molestiae,<br>
-        animi enim praesentium fuga ut exercitationem, veniam placeat."</p>
-    </div>
-    <div class="content-label">
-      <p>KPS World</p>
-    </div>
-  </div>
-  <div class="testimonials-bottom">
-    <img src="Nest-images/icons8-chevron-left-60.png" alt="">
-    <img src="Nest-images/icons8-chevron-right-60.png" alt="">
-  </div>
- </div>
-
- <!-- ....................partners..................... -->
-
- <div class="partners-container">
-   <h2>Our Partners</h2>
-  
-    <marquee behavior="95%" direction="left-img"> 
-      <div class="partner-combany">
-      <img src="Nest-images/al_naboodah-removebg-preview.png" alt="">
-      <img src="Nest-images/fibrain-removebg-preview.png" alt="">
-      <img src="Nest-images/barco-removebg-preview.png" alt="">
-      <img src="Nest-images/gsuite-logo-removebg-preview.png" alt=""> 
-    </div>
-    </marquee>
-    
-
-  </div>
-
-  <!-- ...................footer..................... -->
-
-
-
-  <footer class="footer">
-    <div class="footer-content">
-        <div class="footer-companyinfo">
-            <img src="Nest-images/NAMELOGO.png" alt="">
-            <p>Kalite Global stands as a pioneer in <br>
-            IoT solutions,particularly concentrating <br>
-            on enhancing theintelligence of infrastructures.</p>
-            <div class="social-icons">
-                <img src="Nest-images/icons8-whatsapp-32.png" alt="WhatsApp">
-                <img src="Nest-images/icons8-linkedin-60.png" alt="LinkedIn">    
-                <img src="Nest-images/icons8-instagram-32.png" alt="Instagram">
-            </div>
-        </div>
-        <div class="footer-quicklinks">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Energy</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-       
-        <div class="footer-contact">
-            <h3>Contact</h3>
-            <div class="contact-item">
-              <img src="Nest-images/phone.png" alt="">
-              <div class="contact-text">
-                  <p>Call anytime</p>
-                  <a href="tel:+971502264963">+971 502264963</a>
-              </div>
           </div>
-          <div class="contact-item">
-              <img src="Nest-images/icons8-mail-24.png" alt="">
-              <div class="contact-text">
-                  <p>Send email</p>
-                  <a href="mailto:finance@kalite.co.in">finance@kalite.co.in</a>
-              </div>
-          </div>
-          <div class="contact-item">
-              <img src="Nest-images/icons8-location-50.png" alt="">
-              <div class="contact-text">
-                  <span>Saudi Arabia, United Arab <br>Emirates, India.</span>
-              </div>
-          </div>
+       </div>
+      
+       <!-- footer -->
+      <div class="footerpage-container">
+         
+        <div class="footer-container">
+            <div class="footer-logo">
+               <img src="Nest-images/Nest-logoname.png" alt="">
+               <p>At NEST IT, we build innovative technology solutions tailored to your business needs.
+               From software development to IT consulting, our goal is to empower your growth and success.
+               Stay connected with us for the latest insights and updates.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-mail-24.png" alt="">
+                    <a href="">NestIT@gmail.com</a>
+                </div>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-phone-24.png" alt="">
+                    <a href="">+919846578452</a>
+                </div>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-location-24.png" alt="">
+                    <a href="">Karama,Dubai,UAE</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Follow Us</h3>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-facebook-50.png" alt="">
+                    <a href="">Facebook</a>
+                </div>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-twitter-logo-50.png" alt="">
+                    <a href="">Twitter</a>
+                </div>
+                <div class="footer-contact-cont">
+                    <img src="Nest-images/icons8-instagram-logo-50.png" alt="">
+                    <a href="">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 - Hand Coded By  HJ Web Designs</p>
+        </div>
+
       </div>
-        
-    </div>
-    <div class="footer-bottom">
-
-        <p>© Copyright 2023 by Kalite. Powered By Welkinwits Technologies LLP</p>
-    </div>
-</footer>
-</div>
-   
 
 
-
-
-</div> 
-
-
+</div>  
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script>
+  
+  var typed = new Typed(".auto-type",{
+    strings: ["WEB DEVLOPMENT", "Cyber Security","Security & surveillance"],
+    typeSpeed: 160,
+    backSpeed: 50,
+    loop: true,
+})
+</script> 
+<script src="script.js"></script>
 </html>
